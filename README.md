@@ -30,16 +30,6 @@ localhost:4200
 
 Enjoy 😉
 
-## Screenshots
-
-Home:
-
-<img src="screenshots/home.png" style="width:400px; height:auto"/>
-
-On Mobile:
-
-<img src="screenshots/profile.png" style="width:400px; height:auto"/>
-
 ## Copyright
 
 This application is open source and uses a [Creative Commons CC0 1.0 Universal license][license-link].
