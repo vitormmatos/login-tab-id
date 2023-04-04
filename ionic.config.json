@@ -1,0 +1,7 @@
+{
+  "name": "login-tab-id",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

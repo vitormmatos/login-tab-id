@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <section class="align-center md-margin-top">
+    <ion-card class="card">
+      <ion-card-header>
+        <ion-card-title>Please fill the form</ion-card-title>
+      </ion-card-header>
+
+      <ion-list class="list">
+        <section class="first-list-row">
+          <ion-item>
+            <ion-input
+              [clearInput]="true"
+              label="First Name:"
+              placeholder="John"
+              [value]="firstName"
+              (input)="setFirstName($event)"
+            ></ion-input>
+            <ion-input
+              [clearInput]="true"
+              label="Last Name:"
+              placeholder="Doe"
+              [value]="lastName"
+              (input)="setLastName($event)"
+            ></ion-input>
+          </ion-item>
+        </section>
+
+        <div
+          class="full-content align-center align-vertically-center profile-pic-container sm-margin-top"
+        >
+          <ion-avatar>
+            <img alt="Profile Picture" [src]="profilePicUrl" />
+          </ion-avatar>
+          <input
+            class="sm-margin-left"
+            name="file"
+            type="file"
+            accept="image/*"
+            (change)="selectProfilePic($event)"
+          />
+        </div>
+
+        <h2 class="address-text md-margin-top sm-margin-bottom sm-margin-left">
+          Address:
+        </h2>
+
+        <ion-item>
+          <ion-input
+            [clearInput]="true"
+            label="Street:"
+            placeholder="P.Sherman 42, Wallaby Way"
+            [value]="street"
+            (input)="setStreet($event)"
+          ></ion-input>
+          <ion-input
+            [clearInput]="true"
+            label="City:"
+            placeholder="Sydney"
+            [value]="city"
+            (input)="setCity($event)"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            [clearInput]="true"
+            label="State:"
+            placeholder="New South Wales"
+            [value]="state"
+            (input)="setState($event)"
+          ></ion-input>
+          <ion-input
+            [clearInput]="true"
+            label="Country:"
+            placeholder="Australia"
+            [value]="country"
+            (input)="setCountry($event)"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input
+            [clearInput]="true"
+            label="Occupation:"
+            placeholder="Dentist"
+            [value]="occupation"
+            (input)="setOccupation($event)"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item class="sm-margin-top">
+          <ion-input
+            [value]="phoneNumber"
+            label="Phone Number"
+            type="tel"
+            (keypress)="keyPress($event)"
+            placeholder="888-888-8888"
+            minlength="10"
+            maxlength="10"
+            [clearInput]="true"
+            (input)="setPhoneNumber($event)"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <h5 class="birthday-text sm-margin-right">Birthday:</h5>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+        </ion-item>
+
+        <ion-modal [keepContentsMounted]="true">
+          <ng-template>
+            <ion-datetime
+              id="datetime"
+              presentation="date"
+              [value]="birthday"
+              (click)="setBirthday($event)"
+            ></ion-datetime>
+          </ng-template>
+        </ion-modal>
+      </ion-list>
+    </ion-card>
+  </section>
+</ion-content>

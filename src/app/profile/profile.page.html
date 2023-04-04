@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <section class="align-center md-margin-top">
+    <ion-card>
+      <section class="card-size align-center sm-margin-right">
+        <ion-card-header class="header align-center">
+          <ion-card-title class="align-center">
+            <span class="bold-text larger-text xsm-margin-right">{{
+              firstName
+            }}</span>
+            <span class="bold-text larger-text">{{ lastName }}</span>
+          </ion-card-title>
+        </ion-card-header>
+        <ion-avatar class="profile-pic">
+          <img alt="Profile Picture" [src]="profilePicUrl" />
+        </ion-avatar>
+      </section>
+
+      <section class="md-margin-top">
+        <span class="bold-text sm-margin-left">Birthday:</span> {{ birthday }}
+      </section>
+
+      <section class="sm-margin-top">
+        <span class="bold-text sm-margin-left">Phone Number:</span>
+        {{ phoneNumber }}
+      </section>
+
+      <section class="sm-margin-top">
+        <span class="bold-text sm-margin-left">Occupation:</span>
+        {{ occupation }}
+      </section>
+
+      <section
+        class="full-content md-margin-top sm-margin-left bold-text topic-text"
+      >
+        Address:
+      </section>
+      <section class="full-content sm-margin-top sm-margin-left">
+        <span class="sm-margin-right">{{ street }}</span>
+        City: {{ city }}
+      </section>
+      <section
+        class="full-content sm-margin-top md-margin-bottom sm-margin-left"
+      >
+        State:
+        <span class="sm-margin-right">{{ state }}</span>
+        Country: {{ country }}
+      </section>
+    </ion-card>
+  </section>
+</ion-content>
