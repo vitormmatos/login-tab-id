@@ -34,11 +34,11 @@ Enjoy 😉
 
 Home:
 
-<img src="./screenshots/home.png" style="width:400px; height:auto"/>
+<img src="screenshots/home.png" style="width:400px; height:auto"/>
 
 On Mobile:
 
-<img src="./screenshots/profile.png" style="width:400px; height:auto"/>
+<img src="screenshots/profile.png" style="width:400px; height:auto"/>
 
 ## Copyright
 
